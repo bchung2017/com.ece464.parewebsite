@@ -14,23 +14,27 @@ import AdminPage from '../Admin';
 import CreateEventPage from '../Event';
 import OrganizationPage from '../Organization';
 
+import './App.css';
+
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
 
 const App = () => (
     <Router>
-        <div>
+        <div id="website-container">
             <Navigation />
-            <hr />
 
-            <Route exact path={ROUTES.LANDING} component={LandingPage} />
-            <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
-            <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
-            <Route exact path={ROUTES.HOME} component={HomePage} />
-            <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
-            <Route exact path={ROUTES.ADMIN} component={AdminPage} />
-            <Route exact path={ROUTES.EVENT} component={CreateEventPage} />
-            <Route exact path={ROUTES.ORGANIZATION} component={OrganizationPage} />
+            {/* <hr /> */}
+            <div id="content-container">
+                <Route exact path={ROUTES.LANDING} component={LandingPage} />
+                <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
+                <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
+                <Route exact path={ROUTES.HOME} component={HomePage} />
+                <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
+                <Route exact path={ROUTES.ADMIN} component={AdminPage} />
+                <Route exact path={ROUTES.EVENT} component={CreateEventPage} />
+                <Route exact path={ROUTES.ORGANIZATION} component={OrganizationPage} />
+            </div>
         </div>
         <body>
             <script src="/__/firebase/7.24.0/firebase-app.js"></script>

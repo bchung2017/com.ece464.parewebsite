@@ -1,0 +1,9 @@
+.home-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: Poppins Thin;
+    margin: 10%;
+    font-size: 200px;
+}

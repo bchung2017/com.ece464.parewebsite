@@ -2,11 +2,11 @@ import React from 'react';
 
 import PasswordForgetForm from '../PasswordForget';
 import PasswordChangeForm from '../PasswordChange';
+import "./Account.css";
  
 const AccountPage = () => (
-  <div>
-    <h1>Account</h1>
-    <PasswordForgetForm />
+  <div className="account">
+    <h1>Change Password</h1>
     <PasswordChangeForm />
   </div>
 );
